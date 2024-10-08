@@ -387,6 +387,7 @@ int OnSensorEvent(int /* fd */, int /* events */, void* data) {
  * android_native_app_glue.  It runs in its own thread, with its own
  * event loop for receiving input events and doing other things.
  */
+[[__gnu__::__visibility__("always")]]
 void android_main(android_app* state) {
   Engine engine {};
 
