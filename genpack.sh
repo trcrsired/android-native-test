@@ -5,7 +5,7 @@ export PATH=$ANDROID_BUILD_TOOLS_VER:$PATH
 aapt package -f -M AndroidManifest.xml -I $ANDROID_SDK_ROOT/platforms/android-30/android.jar -S res -F apk-unaligned.apk apk
 
 #zipalign to read data directly not copy
-zipalign -f 4 apk-unsigned.apk apk-unsigned.apk
+zipalign -f 4 apk-unaligned.apk apk-unsigned.apk
 
 #generate our keystore
 #keytool -genkey -v -keystore my-release-key.keystore -alias my-release-key -keyalg ed25519 -validity 100000
