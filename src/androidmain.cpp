@@ -22,7 +22,7 @@
 #include <android/log.h>
 #include <android/sensor.h>
 #include <android/set_abort_message.h>
-#include <android_native_app_glue.h>
+#include "android_native_app_glue.h"
 #include <jni.h>
 
 #include <cassert>
