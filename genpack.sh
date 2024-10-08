@@ -11,4 +11,4 @@ zipalign -f 4 apk-unaligned.apk apk-unsigned.apk
 #keytool -genkey -v -keystore my-release-key.keystore -alias my-release-key -keyalg ed25519 -validity 100000
 
 #put our signature
-apksigner sign --ks ./my-release-key.keystore --ks-key-alias=my-release-key --out apk-signed.apk apk-unsigned.ap
+apksigner sign --ks ./my-release-key.keystore --ks-key-alias=my-release-key --out apk-signed.apk apk-unsigned.apk
